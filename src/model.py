@@ -28,6 +28,10 @@ class ESIM(object):
 
     def build_model(self):
         """
+        Build the model.
+
+        Returns:
+            The ESIM model compiled and ready to be trained.
         """
         a = Input(shape=(self.max_length,), dtype='int32', name='premise')
         b = Input(shape=(self.max_length,), dtype='int32', name='hypothesis')

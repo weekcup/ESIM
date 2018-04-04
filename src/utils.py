@@ -1,6 +1,7 @@
 """
-Utilities.
+Utility functions.
 """
+# Aurelien Coet, 2018.
 
 import os
 import pickle

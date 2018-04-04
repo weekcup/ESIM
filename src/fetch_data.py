@@ -10,7 +10,7 @@ import sys
 import zipfile
 
 
-# Function from https://github,com/lukecq1231/nli/blob/master/data/download.py
+# Function from https://github.com/lukecq1231/nli/blob/master/data/download.py
 def download(url, targetdir):
     """
     Download data from an url and save it in some target directory.
@@ -32,7 +32,7 @@ def download(url, targetdir):
     return filepath
 
 
-# Function from https://github,com/lukecq1231/nli/blob/master/data/download.py
+# Function from https://github.com/lukecq1231/nli/blob/master/data/download.py
 def unzip(filepath):
     """
     Unzip a zipped file.

@@ -12,6 +12,20 @@ from utils import prepare_data, load_embeddings
 def train(preproc_dir, n_classes, max_length, hidden_units, dropout,
           batch_size, epochs, output_dir):
     """
+    Train the ESIM model on some dataset and save the learned weights.
+
+    Args:
+        preproc_dir: The directory where the preprocessed data is saved.
+        n_classes: The number of classes in the problem.
+        max_length: The maximum length of the sentences in the premises and
+                    hypotheses of the dataset.
+        hidden_units: The number of hidden units to use in the various layers
+                      of the model.
+        dropout: The dropout rate to use in the model.
+        batch_size: The size of the batches to use for training.
+        epochs: The number of epochs to apply during training.
+        output_dir: The path to the directory where the weights learned during
+                    training must be saved.
     """
     print("Loading training and validation data...")
     train_premises, train_hyps, train_labels = prepare_data(preproc_dir,
